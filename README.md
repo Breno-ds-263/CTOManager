@@ -2,7 +2,7 @@
 
 Sistema de gerenciamento de CTOs com monitoramento de sensores e integração com SNS da AWS.
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 Antes de começar, você precisa ter instalado em sua máquina:
 
@@ -11,7 +11,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 - **Docker Desktop** (para rodar o Localstack)
 - **Git** (para clonar o repositório)
 
-## 🚀 Configuração do Ambiente
+## Configuração do Ambiente
 
 ### 1. Clone o repositório
 ```bash
@@ -70,7 +70,7 @@ A aplicação estará disponível em: `http://localhost:8080`
 - **Username:** `sa`
 - **Password:** *(deixe em branco)*
 
-## 📦 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 CTOManager/
@@ -89,7 +89,7 @@ CTOManager/
 └── mvnw                         # Maven Wrapper
 ```
 
-## 🔌 Endpoints da API
+## Endpoints da API
 
 | Método | URL | Descrição |
 |--------|-----|-----------|
@@ -100,7 +100,7 @@ CTOManager/
 | GET | `/api/modelos` | Lista modelos de CTO |
 | GET | `/api/sensores` | Lista sensores |
 
-## 📝 Exemplo de Payload
+## Exemplo de Payload
 
 ### Criar CTO
 ```json
@@ -114,7 +114,7 @@ CTOManager/
 }
 ```
 
-## 🐳 Comandos úteis do Docker
+##  Comandos úteis do Docker
 
 ```bash
 # Parar o Localstack
@@ -127,7 +127,7 @@ docker-compose logs -f
 docker-compose restart
 ```
 
-## ⚠️ Solução de problemas comuns
+##  Solução de problemas comuns
 
 ### Erro: "Já existe uma CTO com esse nome"
 - O nome da CTO deve ser único no sistema.
