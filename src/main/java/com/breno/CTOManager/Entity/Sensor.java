@@ -30,10 +30,12 @@ public class Sensor {
     }
 
     public Long getId() {
+
         return id;
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 
@@ -46,18 +48,22 @@ public class Sensor {
     }
 
     public String getCausa() {
+
         return causa;
     }
 
     public void setCausa(String causa) {
+
         this.causa = causa;
     }
 
     public StatusSensor getStatus() {
+
         return status;
     }
 
     public void setStatus(StatusSensor status) {
+
         this.status = status;
     }
 }

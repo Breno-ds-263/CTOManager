@@ -46,7 +46,7 @@ public class CTOService {
         repository.delete(cto);
     }
 
-    // Método que o seu Controller do SNS vai chamar
+
     public void atualizarStatusSns(String nomeCto, StatusSensor novoStatus, String causa) {
         CTO cto = repository.findByNome(nomeCto)
                 .orElseThrow(() -> new RuntimeException("CTO não encontrada para o alarme"));

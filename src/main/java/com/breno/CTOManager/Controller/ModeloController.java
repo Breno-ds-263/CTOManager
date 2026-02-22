@@ -18,11 +18,13 @@ public class ModeloController {
 
     @GetMapping
     public List<Modelo> listar() {
+
         return service.listarTodos();
     }
 
     @PostMapping
     public Modelo salvar(@RequestBody Modelo modelo) {
+
         return service.salvar(modelo);
     }
 

@@ -14,14 +14,17 @@ public class ModeloService {
     private ModeloRepository repository;
 
     public List<Modelo> listarTodos(){
+
         return repository.findAll();
     }
 
     public  Modelo salvar(Modelo modelo){
+
         return repository.save(modelo);
     }
 
     public void excluir(long id){
+
         repository.deleteById(id);
     }
 

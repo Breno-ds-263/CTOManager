@@ -16,6 +16,7 @@ public class SensorService {
     private SensorRepository repository;
 
     public List<Sensor> Listar(){
+
         return repository.findAll();
     }
 

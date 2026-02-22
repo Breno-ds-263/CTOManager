@@ -17,11 +17,13 @@ public class SensorController {
 
     @GetMapping
     public List<Sensor> listar() {
+
         return service.Listar();
     }
 
     @PostMapping
     public Sensor salvar(@RequestBody Sensor sensor) {
+
         return service.salvar(sensor);
     }
 }

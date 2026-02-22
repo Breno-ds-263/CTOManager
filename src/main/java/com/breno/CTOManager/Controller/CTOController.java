@@ -37,15 +37,11 @@ public class CTOController {
             service.excluir(id);
             return ResponseEntity.noContent().build();
         } catch (RuntimeException e) {
-            // Retorna o erro da regra de negócio: Proibido excluir se ALARMADO
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
 
-    /**
-     * Endpoint para receber notificações do SNS (Localstack).
-     * Formato esperado da "Message" no SNS: "NOME_CTO:STATUS:CAUSA"
-     */
+
     @PostMapping(value = "/sns", consumes = "*/*")
     public ResponseEntity<String> receberNotificacaoSns(@RequestBody String rawPayload) {
 
@@ -70,7 +66,7 @@ public class CTOController {
                 String message = (String) payload.get("Message");
 
                 if (message != null) {
-                    System.out.println("📩 Mensagem recebida: " + message);
+                    System.out.println("Mensagem recebida: " + message);
 
                     String[] partes = message.split(":");
                     if (partes.length >= 2) {
